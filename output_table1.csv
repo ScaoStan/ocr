@@ -1,0 +1,90 @@
+COURSE,COURSE TITLE,CREDIT UNIT,GRADE SCORE
+2019/2020 ALPHA Semester 54,,,
+BIO111,General Biology I,3,A
+CHM111,General Physical Chemistry,3,B
+CHM119,General Chemistry Practical I,1,A
+CIT111,"Microsoft Office Specialist on MicrosoftOffice 20",0,A
+CSC111,Introduction to Computer Science,3,A
+CST111,Computer Application and Library Studies 1,2,A
+EDS111,Entrepreneurial Development Studies I,1,A
+GST111,Communication in English I,2,A
+MAT111,Mathematics I: Algebra,3,A
+MAT112,Mathematics II: Trigonometry and Geometry,2,A
+MAT114,Mathematics IV: Statistics I,2,A
+PHY111,Mechanics and Properties of Matter,2,A
+PHY119,Physics Practical I,1,A
+TMC111,Total Man Concept I,1,A
+TMC112,Total Man Concept - Sports I,0,A
+2019/2020 Omega Semester 55,,,
+CIT121,"Microsoft Office Specialist on MicrosoftOffice 20",0,A
+CIT141,COMPTIA II,0,A
+CSC121,Introduction to Problem Solving,3,A
+CSC125,Operating System I,3,A
+CST121,"Use of library and Studies Skill andInformation C",2,A
+EDS121,Entrepreneurial Development Studies II,1,A
+GST121,Communication in English II,2,A
+GST122,Communication in French,2,A
+MAT121,Calculus,3,A
+MAT122,Introduction to Vector Analysis,2,A
+PHY121,Electricity and Magnetism I,3,A
+PHY122,Atomic and Nuclear Physics,2,A
+PHY129,Physics Practical II,1,B
+TMC121,Introduction to the Total Man Concept II,1,A
+TMC122,Total Man Concept - Sports II,0,A
+2020/2021 Alpha Semester 56,,,
+CIT211,Java Foundations Certified Junior Associate,0,B
+CSC211,Computer Programming I,3,A
+CSC213,Structured Programming,3,A
+CSC214,"High Performance Computing & DatabaseManagement I",3,A
+CSC216,"Foundations of Sequential and ParallelProgramming",3,A
+CSC231,Linear Algebra I,3,A
+DLD111,Foundations of Leadership Development,0,A
+EDS211,Entrepreneurial Development Studies III,1,B
+GST211,Introduction to Philosophy and Logic,2,B
+MAT212,Mathematical Methods I,3,A
+PHY232,Electric Circuit and Electronics,3,A
+TMC211,Total Man Concept – III,1,A
+TMC212,Total Man Concept –Sports III,0,A
+2020/2021 Omega Semester 57,,,
+CIT221,Oracle Database: SQL Fundamentals,0,A
+CSC221,Computer Programming II,3,A
+CSC223,Computer Hardware,3,A
+CSC224,Introduction to Computational Biology,2,A
+CSC225,Operating Systems,3,A
+CSC226,Statistical Methods,2,A
+CSC227,Computer Architecture and Organization I,2,A
+CSC241,Linear Algebra II,3,A
+DLD121,Leadership Pathways,0,B
+EDS221,Entrepreneurial Development Studies IV,1,A
+GST221,Nigerian People and Culture,2,A
+GST222,Peace and Conflict Studies,2,C
+TMC221,Total Man Concept IV,1,A
+TMC222,Total Man Concept - Sports IV,0,A
+2021/2022 Alpha Semester 58,,,
+CIT310,"Cyber Security Specialist - ApplicationSecurity",0,B
+CSC310,Internet Programming,3,A
+CSC312,Fundamentals of Data Structures,3,A
+CSC313,Object-Oriented Programming,3,A
+CSC314,Theory of Computing,2,A
+CSC316,Research Methods,2,A
+CSC317,System Analysis and Design,3,A
+CSC318,Compiler Construction I,3,A
+CSC319,Operations Research,2,A
+EDS311,Entrepreneurial Development Studies V,1,A
+GST311,History and Philosophy of Science,2,A
+TMC311,Total Man Concept V,1,A
+TMC312,Total Man Concept –Sports V,0,A
+2021/2022 Omega Semester 59,,,
+CSC329,"Student Industrial Workshop ExperienceScheme (SIW",6,A
+2022/2023 Alpha Semester 61,,,
+CSC411,Software Engineering,3,A
+CSC413,Algorithms and Complexity Analysis,3,A
+CSC415,Artificial Intelligence,3,A
+CSC416,Discrete Structure,3,A
+CSC431,"Computational Science and NumericalMethods",3,A
+CSC433,Computer Graphics and Animation,2,A
+DLD211,Leadership and Developmental Studies,0,A
+EDS411,Entrepreneurial Development Studies VII,1,A
+MIS415,Project Management,2,A
+TMC411,Total Man Concept VII,1,A
+TMC412,Total Man Concept –Sports VII,0,A

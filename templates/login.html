@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credentio</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+    
+</head>
+<body>
+    <div class="container login-container">
+        <div class="row">
+            <div class="col-md-6 login-form-1">
+                <h3>Login</h3>
+                <form action="/loginsuccess" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="username" placeholder="Your Email *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" placeholder="Your Password *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btnSubmit" value="Login" />
+                    </div>
+                    <div class="msg">{{ msg }}</div>
+                    <div class="form-group">
+                       <span>Don't have an account? <a href="/register" class="ForgetPwd">Sign Up here</a></span> 
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 login-form-2">
+            </div>
+
+
+  <!--  <script src="{{ url_for('static', filename='js/jquery-3.7.0.slim.min.map.js') }}"></script>
+    -->
+
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script></body>
+</html>

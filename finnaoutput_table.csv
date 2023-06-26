@@ -1,0 +1,94 @@
+COURSE,COURSE TITLE,CREDIT UNIT,MARK,GRADE SCORE,USA Grades Equivalency,USA Weighted Score Equivalency
+ACC111,Principles of Accounting 1,2.0,77.0,A,A,8.0
+CSC111,"Introduction to ComputerScience",3.0,66.0,B,B+,9.9
+CST111,"Computer Application andLibrary Studies 1P",2.0,81.0,A,A,8.0
+ECN111,Introduction to Economics I,2.0,71.0,A,A,8.0
+EDS111,"Entrepreneurial DevelopmentStudies I",1.0,80.0,A,A,4.0
+GST111,Communication in English I,2.0,70.0,A,A,8.0
+MAT111,Mathematics I: Algebra,3.0,63.0,B,B+,9.9
+MAT112,"Mathematics II: Trigonometryand Geometry",2.0,81.0,A,A,8.0
+PHY111,"Mechanics and Properties ofMatter",2.0,72.0,A,A,8.0
+TMC111,Total Man Concept I,1.0,83.0,A,A,4.0
+TMC112,Total Man Concept - Sports,0.0,70.0,A,A,0.0
+Semester 2,,,,,,
+ACC121,Principles of Accounting II,2.0,81,A,A,8.0
+BUS124,Business Communication,2.0,81,A,A,8.0
+CSC121,Introduction to Problem Solving,2.0,81,A,A,8.0
+CST121,"Use of Library, Study Skills andInformation Commu",2.0,79.0,A,A,8.0
+ECN121,Introduction to Economics II,2.0,72.0,A,A,8.0
+EDS121,"Entrepreneurial DevelopmentStudies II",1.0,59.0,C,B,3.0
+GST121,Communication in English II,2.0,60.0,B,B+,6.6
+GST122,Communication in French,2.0,81.0,A,A,8.0
+MAT121,Mathematics V: Calculus,3.0,73.0,A,A,12.0
+MAT122,Mathematics VI: Vector Algebra,2.0,68.0,B,B+,6.6
+TMC121,Total Man Concept II,1.0,79.0,A,A,4.0
+TMC122,Total Man Concept - Sports,0.0,70.0,A,A,0.0
+CSC125,Operating System I,3.0,71.0,A,A,12.0
+CIT121,"Microsoft Office Specialist onMicrosoft Office 20",0.0,69.0,B,B+,0.0
+CIT141,COMPTIA II,0.0,57.0,C,B,0.0
+Semester 3,,,,,,
+BFN211,Business Finance 1,2.0,78.0,A,A,8.0
+BUS211,Principles of Management I,2.0,70.0,A,A,8.0
+CBS111,"Mathematics for Business andSocial Sciences IY",3.0,93.0,A,A,12.0
+CIT211,"Java Foundations Certified JuniorAssociate",0.0,73.0,A,A,0.0
+CSC211,Computer Programming I,3.0,79.0,A,A,12.0
+CSC213,Structured Programming,3.0,90.0,A,A,12.0
+CSC214,High Performance Computing andData ManTagement,3.0,88.0,A,A,12.0
+DLD111,FouDeEndations of Leadershipvelopment,0.0,79.0,A,A,0.0
+EDS211,"Entrepreneurial DevelopmentStudies III",1.0,74.0,A,A,4.0
+GSST211,"Logic, Philosophy and HumanExistence",2.0,53.0,C,B,6.0
+TMC211,Total Man Concept III,1.0,76.0,A,A,4.0
+TMC212,Total Man Concept - Sports,0.0,70.0,A,A,0.0
+Semester 4,,,,,,
+BUS221,Principles of Management II,2.0,64,B,B+,6.6
+CBS121,"Statistics of Business and SocialScience I",3.0,92.0,A,A,12.0
+CIT221,"Oracle Database 12c: SQLFundamenta ls",0.0,70.0,A,A,0.0
+CSC221,Computer Programming II,3.0,88.0,A,A,12.0
+CSC225,Operating Systems,3.0,79.0,A,A,12.0
+DLD121,Leadership Current Realities,0.0,85.0,A,A,0.0
+EDS221,"Entrepreneurial DevelopmentStudies IV",1.0,91.0,A,A,4.0
+GST221,Nigerian People and Culture,2.0,79.0,A,A,8.0
+GST222,Peace and Conflict Studies,2.0,81.0,A,A,8.0
+MIS221,"Introduction to ManagementInformation System",3.0,86.0,A,A,12.0
+TMC221,Total Man Concept IV,1.0,94.0,A,A,4.0
+TMC222,Total Man Concept - Sports IV,0.0,70.0,A,A,0.0
+CSC226,Statistical Methods,2.0,74.0,A,A,8.0
+Semester 5,,,,,,
+CSC312,Fundamental of Data Structure,2.0,71.0,A,A,8.0
+CIT310,"Cyber Security specialistApplication Security",0.0,84.0,A,A,0.0
+GST311,"History and Philosophy ofScience",2.0,51.0,C,B,6.0
+TMC312,Total Man Concept –Sports V,0.0,70.0,A,A,0.0
+EDS311,"Entrepreneurial DevelopmentStudies VS",1.0,86.0,A,A,4.0
+TMC311,Total Man Concept V,1.0,86.0,A,A,4.0
+MKT211,Principles of Marketing I,3.0,72.0,A,A,12.0
+BFN311,Business Finance II,3.0,68.0,B,B+,9.9
+CSC313,Object-Oriented Programming,2.0,80.0,A,A,8.0
+MIS316,Research Methods,2.0,78.0,A,A,8.0
+CSC317,Systems Analysis and Design,2.0,65.0,B,B+,6.6
+BUS313,Commercial Law,3.0,62.0,B,B+,9.9
+CSC310,Internet Programming,2.0,57.0,C,B,6.0
+Semester 6,,,,,,
+MIS329,"Student Industrial WorkExperience Scheme (SIWES)",6.0,73,A,A,24.0
+Semester 7,,,,,,
+CSC411,Software Engineering,3.0,76,A,A,12.0
+CSC415,Artificial Intelligence,3.0,70,A,A,12.0
+DLD211,"Leadership andDevelopmental Studies",0.0,85,A,A,0.0
+EDS411,"Entrepreneurial DevelopmentStudies VII",1.0,84,A,A,4.0
+MIS412,Knowledge Management,2.0,77,A,A,8.0
+MIS413,System Accounting,2.0,65,B,B+,6.6
+MIS415,Project Management,2.0,76,A,A,8.0
+MIS418,E-Commerce Technology,2.0,71,A,A,8.0
+TMC411,Total Man Concept VII,1.0,81,A,A,4.0
+TMC412,"Total Man Concept –SportsVII",0.0,70,A,A,0.0
+Semester 8,,,,,,
+CSC424,"Computer Networks/Communication",3.0,58.0,C,B,9.0
+DLD221,Leadership Dynamics,0.0,81.0,A,A,0.0
+EDS421,Entrepreneurial DevelopmentStudies VIII 'S,1.0,75.0,A,A,4.0
+MIS421,Decision Support System,3.0,71.0,A,A,12.0
+MIS422,ProEduction and OperationManagement,2.0,63.0,B,B+,6.6
+MIS423,Management Theory,3.0,77.0,A,A,12.0
+MIS425,System Security Management,2.0,76.0,A,A,8.0
+MIS429,Project,6.0,74.0,A,A,24.0
+TMC421,Total Man Concept VIII,1.0,96.0,A,A,4.0
+TMC422,"Total Man Concept - SportsVIII",0.0,70.0,A,A,0.0
+TTG222,Leadership Dynamics,0.0,87.0,A,A,0.0

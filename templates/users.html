@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Credentio</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstdap css -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+      <!-- style css -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboar.css') }}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+      <style>
+        .table{
+            table-layout:fixed;
+        }
+        .table td:first-child {
+          width: 5%;
+        }
+      </style>
+   </head>
+   <body>
+    <nav class="navbar navbar-dark fixed-top bg-x flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Admin Panel</a>
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+              <div class="read_bt"><a href="/logout">Log Out</a></div>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+          <!-- Sidear -->
+          <div class="col-md-2 bg-light d-none d-md-block sidebar">
+            <div class="left-sidebar">
+                <ul class="nav flex-column sidebar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="/unis">
+                        <svg class="bi bi-chevron-right" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" clip-rule="evenodd"/></svg>
+                        Universities
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/users">
+                        <svg class="bi bi-chevron-right" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" clip-rule="evenodd"/></svg>
+                        Users
+                      </a>
+                    </li>
+                   
+                  </ul>
+            </div>
+          </div>
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <h3>Users </h3>
+            {%with messages = get_flashed_messages()%}
+            {%if messages%}
+            {% for messages in messages %}
+            <div class="alert alert-success alert-dismissable" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                    <span aria-hidden="tdue">&times;</span>
+                </button>
+                {{message}}
+            </div>
+            {%endfor%}
+            {%endif%}
+            {%endwith%}
+    
+                <table class="table table-hover ">
+                    <thead >
+                        <tr>
+                            <th class='col-2'>S/N</th>
+                            <th class='col-7'>First Name</th>
+                            <th class='col-7' >Last Name</th>
+                            <th class='col-12'>Email Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in users %}
+                            <tr>
+                            <td>{{row[0]}}</td>
+                            <td>{{row[1]}}</td>               
+                            <td>{{row[2]}}</td>
+                            <td>{{row[3]}}</td>
+                        </tr>
+                   
+                      {%endfor%}
+
+
+                   
+
+                    </tbody>
+                </table>
+           
+          </main>
+        </div>
+    </div>
+      
+      <!--copyright section end -->
+      <!-- Javascript files-->
+      <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+      <script>
+        function setTwoNumberDecimal(event) {
+            this.value = parseFloat(this.value).toFixed(2);
+        }
+      </script>
+
+     
+      
+   </body>
+</html>

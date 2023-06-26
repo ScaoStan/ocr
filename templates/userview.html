@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- site metas -->
+  <title>Credentio</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- bootstdap css -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <!-- style css -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboar.css') }}">
+  <!-- Responsive-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+  <style>
+    .table {
+      table-layout: fixed;
+    }
+
+    .table td:first-child {
+      width: 5%;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top bg-x flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Welcome {{name}}</a>
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <div class="read_bt"><a href="/logout">Log Out</a></div>
+      </li>
+    </ul>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidear -->
+      <div class="col-md-2 bg-light d-none d-md-block sidebar">
+        <div class="left-sidebar">
+          <ul class="nav flex-column sidebar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="/userview">
+                <svg class="bi bi-chevron-right" width="16" height="16" viewBox="0 0 20 20" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"
+                    clip-rule="evenodd" />
+                </svg>
+                Convert Transcript
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/userunis">
+                <svg class="bi bi-chevron-right" width="16" height="16" viewBox="0 0 20 20" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"
+                    clip-rule="evenodd" />
+                </svg>
+                View Schools
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        {%with messages = get_flashed_messages()%}
+        {%if messages%}
+        {% for messages in messages %}
+        <div class="alert alert-success alert-dismissable" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="close">
+            <span aria-hidden="tdue">&times;</span>
+          </button>
+          {{message}}
+        </div>
+        {%endfor%}
+        {%endif%}
+        {%endwith%}
+
+        <div class="col-md-6 offset-md-4 mt-5">
+          <h2 class="">ABOUT GRADING SYSTEMS</h2>
+        </div>
+          <div class="col-md-10 offset-md-1">
+          <p>Grades can be given as letters (often A through F), a range (such as 1 to 6), a percentage, or a number as a percentage of the total possible. The grades associated with marks awarded for each course taken are listed in the academic transcript. There are different types of grading systems which include:</p>
+          <hr>
+          <P>i.	<b>Percentage Grading</b>: The percentage scale, which is expressed as a percentage of the scores, is being used. Typically, it is determined through tests and/or the percentage of points obtained on assignments. Percentage based trascripts usually include the percentage scores in the transcripts</P>
+
+          <P>ii.	<b>Letter Grading</b>:It is achieved by using an ordered category scale using a sequence of letters (often A, B, C, D, and F) or letters with plusses and minuses using a standard-based approach. Letter based transcripts usually include the Letter grade in the transcripts. Often times,they do not contain the percentage scores as more emphasis are placed on the letter grades</P>
+
+          <P>iii.	<b>Mastery Grading</b>:When a student's proficiency reaches a certain level, they are graded as "masters" or "passers," with various pupils often being given varying periods of time to achieve mastery.</P>
+
+          <P>iv.	<b>Pass or Fail</b>:Using a pass/fail scale, occasionally in conjunction with mastery grading. For example, the United Kingdom uses the Pass/Fail grading system.</P>
+
+          <P>iv.	<b>Narrative Grading</b>Making remarks on students' accomplishments in instead of or in addition to using numbers or letters.</P>
+        </div>
+
+        <div class="">
+          <div class="col-md-6 offset-md-5 mt-5">
+            <h3>GRADE SCALES</h3>
+          </div>
+          <div class="col-md-10 offset-md-3"> <p>These are the definitions of the grade scales you can convert your transcript to</p></div>
+         
+          <div class="scaletables d-flex flex-wrap justify-content-between">
+            <div class=" col-10 usa">
+              <h5>USA/Canada Grading Scale</h5>
+            
+              <table class="table table-hover table-responsive">
+                <thead>
+                  <tr>
+                    <th class='col-4'>Percentage</th>
+                    <th class='col-4'>Letter Grade</th>
+                    <th class='col-7'>Value Point</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class='col-4'>93-100</td>
+                    <td class='col-4'>A</td>
+                    <td class='col-7'>4</td>
+                  </tr>
+                  <tr>
+                    <td class='col-4'>90-92</td>
+                    <td class='col-4'>A <sup>-</sup></td>
+                    <td class='col-7'>3.7</td>
+                  </tr>
+                  <tr>
+                    <td class='col-4'>87-89</td>
+                    <td class='col-4'>B<sup>+</sup></td>
+                    <td class='col-7'>3.3</td>
+                  </tr>
+                  <tr>
+                    <td class='col-4'>83-86</td>
+                    <td class='col-4'>B</td>
+                    <td class='col-7'>3.0</td>
+                  </tr>
+                  <tr>
+                    <td class='col-4'>80-82</td>
+                    <td class='col-4'>B<sup>-</sup></td>
+                    <td class='col-7'>2.7</td>
+                  </tr>
+                  <tr>
+                    <td class='col-4'>77-79</td>
+                    <td class='col-4'>C<sup>+</sup></td>
+                    <td class='col-7'>2.3</td>
+                  </tr>
+                  <tr>
+                    <td class='col-4'>73-76</td>
+                    <td class='col-4'>C</td>
+                    <td class='col-7'>2.0</td>
+                  </tr>
+                  <tr>
+                    <td class='col-4'>70-72</td>
+                    <td class='col-4'>C <sup>-</sup>
+                    </td>
+                    <td class='col-7'>1.7</td>
+                  </tr>
+                  <tr>
+                    <td class='col-4'>67-69</td>
+                    <td class='col-4'>D <sup>+</sup>
+                    </td>
+                    <td class='col-7'>1.3</td>
+                  </tr>
+                  <tr>
+                    <td class='col-4'>63-66</td>
+                    <td class='col-4'>D
+                    </td>
+                    <td class='col-7'>1.0</td>
+                  </tr>
+                  <tr>
+                    <td class='col-4'>60-62</td>
+                    <td class='col-4'>D <sup>-</sup>
+                    </td>
+                    <td class='col-7'>0.7</td>
+                  </tr>
+                  <tr>
+                    <td class='col-4'>
+                      less than 60</td>
+                    <td class='col-4'>F
+                    </td>
+                    <td class='col-7'>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+
+
+            <div class="col-10 usa">
+              <h5>Australia Grading Scale</h5>
+              
+              <table class="table table-hover table-responsive">
+                <thead>
+                  <tr>
+                    <th class='col-4'>Percentage</th>
+                    <th class='col-4'>Letter Grade</th>
+                    <th class='col-4'>Value Point</th>
+                    <th class='col-4'>Description</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class='col-4'>85-100</td>
+                    <td class='col-4'>HD</td>
+                    <td class='col-4'>7</td>
+                    <td class='col-4'>High Distinction</td>
+                  </tr>
+                  <tr>
+                    <td class='col-4'>75-84</td>
+                    <td class='col-4'>D</td>
+                    <td class='col-4'>6</td>
+                    <td class='col-4'>Distinction</td>
+                  </tr>
+                  <tr>
+                    <td class='col-4'>65-74</td>
+                    <td class='col-4'>C</td>
+                    <td class='col-4'>5</td>
+                    <td class='col-4'>Credit</td>
+                  </tr>
+                  <tr>
+                    <td class='col-4'>50-64</td>
+                    <td class='col-4'>P</td>
+                    <td class='col-4'>4</td>
+                    <td class='col-4'>Pass</td>
+                  </tr>
+                  <tr>
+                    <td class='col-4'>0-49</td>
+                    <td class='col-4'>F</td>
+                    <td class='col-4'>0-3</td>
+                    <td class='col-4'>Fail</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="col-10 usa">
+              <h5>UK Grading Scale</h5>
+             
+              <table class="table table-hover table-responsive">
+                <thead>
+                  <tr>
+                    <th class='col-4'>Percentage</th>
+                    <th class='col-4'>Letter Grade</th>
+                    <th class='col-7'>Classification</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class='col-4'>70% and above</td>
+                    <td class='col-4'>First</td>
+                    <td class='col-7'>First-Class Honours</td>
+
+                  </tr>
+                  <tr>
+                    <td class='col-4'>60% - 69%</td>
+                    <td class='col-4'>2:1</td>
+                    <td class='col-7'>Upper Second-Class Honours</td>
+
+                  </tr>
+                  <tr>
+                    <td class='col-4'>50% - 59%</td>
+                    <td class='col-4'>2:2</td>
+                    <td class='col-7'>Lower Second-Class Honours</td>
+
+                  </tr>
+                  <tr>
+                    <td class='col-4'>40% - 49%</td>
+                    <td class='col-4'>Third</td>
+                    <td class='col-7'>Third-Class Honours</td>
+
+                  </tr>
+                  <tr>
+                    <td class='col-4'>Varies</td>
+                    <td class='col-4'>Pass(Ordinary)</td>
+                    <td class='col-7'>Ordinary Degree</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+
+          <div class="col-md-6 offset-md-3 mt-5">
+              <h3>Get Your Transcript Converted Here</h3>
+
+              <form method="POST" enctype="multipart/form-data" action="/userview">
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">
+                    <h6>Select Country Grade Conversion</h6>
+                  </label>
+                  <select class="form-control" id="exampleFormControlSelect1" name="country" required="required">
+                    <option selected disabled hidden>Choose here</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="australia">Australia</option>
+                  </select>
+                </div>
+                <hr>
+
+                <div class="form-group">
+                  <label for="transcriptType" required="required">
+                    <h6>Select Transcript Type</h6>
+                  </label>
+                  <div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="transcript-type" id="inlineRadio1"
+                        value="official">
+                      <label class="form-check-label" for="inlineRadio1">Percentage Based Transcript</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="transcript-type" id="inlineRadio2"
+                        value="unofficial">
+                      <label class="form-check-label" for="inlineRadio2">Grade Based Transcript</label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+
+                <!--    <div class="form-group mt-3">
+                    <label class="mr-2"><h6>Upload transcript:</h6></label>
+                    <input class="form-control" type="file" name="file" >
+                  </div>-->
+                <div class="form-group mt-3">
+                  <label class="mr-2">
+                    <h6>Upload transcript:</h6>
+                  </label>
+                  <div class="file-upload">
+                    <div class="file-select">
+                      <div class="file-select-button" id="fileName">Choose File</div>
+                      <div class="file-select-name" id="noFile">No file chosen...</div>
+                      <input type="file" name="file" id="chooseFile">
+                    </div>
+                  </div>
+                </div>
+
+                <hr>
+                <button type="submit" class="btn btn-success bg-x">Upload</button>
+              </form>
+            </div>
+
+      </main>
+    </div>
+  </div>
+
+  <!--copyright section end -->
+  <!-- Javascript files-->
+  <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+  <script>
+    function setTwoNumberDecimal(event) {
+      this.value = parseFloat(this.value).toFixed(2);
+    }
+    $('#chooseFile').bind('change', function () {
+      var filename = $("#chooseFile").val();
+      if (/^\s*$/.test(filename)) {
+        $(".file-upload").removeClass('active');
+        $("#noFile").text("No file chosen...");
+      }
+      else {
+        $(".file-upload").addClass('active');
+        $("#noFile").text(filename.replace("C:\\fakepath\\", ""));
+      }
+    });
+  </script>
+
+
+
+</body>
+
+</html>
