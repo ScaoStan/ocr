@@ -48,7 +48,7 @@ def delete_folder_contents(folder_path):
             os.rmdir(file_path)
 
 @app.route('/')
-def home():  
+def hello():  
     app.logger.info(os.environ['Path']) 
     return render_template('home.html')
 
